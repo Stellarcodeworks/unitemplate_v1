@@ -1,0 +1,22 @@
+{
+    "name": "@eop/access",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "main": "./src/index.ts",
+    "types": "./src/index.ts",
+    "exports": {
+        ".": "./src/index.ts"
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "typecheck": "tsc --noEmit",
+        "test": "vitest run"
+    },
+    "devDependencies": {
+        "@eop/config": "workspace:*",
+        "eslint": "^9.17.0",
+        "typescript": "^5.7.0",
+        "vitest": "^2.1.0"
+    }
+}

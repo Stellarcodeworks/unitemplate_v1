@@ -1,0 +1,38 @@
+{
+    "expo": {
+        "name": "EOP Mobile",
+        "slug": "eop-mobile",
+        "version": "1.0.0",
+        "scheme": "eop",
+        "platforms": [
+            "ios",
+            "android"
+        ],
+        "orientation": "portrait",
+        "userInterfaceStyle": "automatic",
+        "newArchEnabled": true,
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.eop.mobile",
+            "infoPlist": {
+                "NSFaceIDUsageDescription": "EOP uses Face ID to secure your session."
+            }
+        },
+        "android": {
+            "package": "com.eop.mobile"
+        },
+        "plugins": [
+            "expo-router",
+            "expo-secure-store",
+            [
+                "expo-local-authentication",
+                {
+                    "faceIDPermission": "EOP uses Face ID to secure your session."
+                }
+            ]
+        ],
+        "experiments": {
+            "typedRoutes": true
+        }
+    }
+}
